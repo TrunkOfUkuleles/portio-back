@@ -1,0 +1,29 @@
+{
+  "name": "portio-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrunkOfUkuleles/portio-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrunkOfUkuleles/portio-back/issues"
+  },
+  "homepage": "https://github.com/TrunkOfUkuleles/portio-back#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "superagent": "^7.1.1"
+  }
+}
