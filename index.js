@@ -24,7 +24,7 @@ gifs.on('connection', socket => {
     //Function to have users join rooms
     socket.on('join', payload => {
         console.log("Socket:", socket.id);
-
+        console.log("payload: ", payload)
         //Checks for duplicates in allWhoEnter Array
         let allWhoEnterDuplicate = allWhoEnter.reduce((acc, userObj) => {
             if (userObj.socketId === payload.socketId) acc = true;
@@ -34,7 +34,7 @@ gifs.on('connection', socket => {
         if (!allWhoEnterDuplicate) {
             allWhoEnter.push({ ...payload.user, socketId: socket.id });
         }
-        gifs.emit('get all participants', allWhoEnter);
+        gifs.emit('message', payload);
     });
 
 
